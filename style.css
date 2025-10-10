@@ -1,0 +1,139 @@
+/* GENEL AYARLAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #111;
+  color: #f0f0f0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* BAŞLIK ve MENÜ */
+header {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #e63946;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #e63946;
+}
+
+/* ANA İÇERİK */
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 30px 0 15px;
+  text-align: center;
+  color: #e63946;
+  letter-spacing: 1px;
+}
+
+/* TABLOLAR (GENİŞ GÖRÜNÜM) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  background: #1b1b1b;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+th, td {
+  padding: 16px 20px;
+  text-align: center;
+  min-width: 90px;
+}
+
+th {
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+td {
+  border-top: 1px solid #333;
+}
+
+tr:nth-child(even) {
+  background-color: #181818;
+}
+
+tr:hover {
+  background: #262626;
+  transition: background 0.2s ease;
+}
+
+/* TAKIM LOGOLARI (isteğe bağlı kullanılır) */
+.team-logo {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ALT BİLGİ */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #222;
+  color: #aaa;
+  border-top: 2px solid #e63946;
+  font-size: 0.9rem;
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 600px) {
+  th, td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav {
+    gap: 10px;
+  }
+}
